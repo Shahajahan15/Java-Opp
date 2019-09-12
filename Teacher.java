@@ -11,4 +11,11 @@ public class Teacher {
         System.out.println("Gender : " +gender);
         System.out.println("phone : " +phone);
     }
+    
+    // Parameter Passing by method
+    void setInfo(String n, String m, int ph) {
+        name = n;
+        gender = m;
+        phone = ph;
+    }
 }
