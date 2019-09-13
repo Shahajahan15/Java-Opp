@@ -6,9 +6,17 @@ public class StaticKeyword {
     int id;
     static String varsity = "BU";
     String div = "Dhaka";
+    static int count = 0;
     
-    // Empty Constructor  declare
-    StaticKeyword(){}
+    // Empty Constructor  declare to count variavle
+    StaticKeyword(){
+        count++;
+    }
+    
+    // to count 
+    void toCount() {
+        System.out.println("Total count : "+count);
+    }
     
     // Constructor declare
     StaticKeyword(String n, int i) {

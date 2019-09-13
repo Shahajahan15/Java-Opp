@@ -15,6 +15,13 @@ public class StaticVariableOne {
         // static variable calling
         System.out.println("Varsity name : "+StaticKeyword.varsity);
         
+        // count to static variable
+        StaticKeyword count = new StaticKeyword();
+        count.toCount();
+        
+        StaticKeyword count1 = new StaticKeyword();
+        count1.toCount();
+        
     }
     
 }
