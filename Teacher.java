@@ -4,12 +4,23 @@ public class Teacher {
     
     String name, gender;
     int phone;
+    String year;
     
     // Constructor Declare
+    Teacher () {  }
+    
+    //  Overloading Constructor Declare
     Teacher(String n, String g, int ph) {
         name = n;
         gender = g;
         phone = ph;
+    }
+    
+    //  Overloading Constructor Declare
+    Teacher(String n, String g, String a) {
+        name = n;
+        gender = g;
+        year = a;
     }
     
     // create method
@@ -17,6 +28,7 @@ public class Teacher {
         System.out.println("Name : " +name);
         System.out.println("Gender : " +gender);
         System.out.println("phone : " +phone);
+        System.out.println("Age : " +year);
         System.out.println("");
     }
     
