@@ -1,5 +1,7 @@
 package oop;
 
+import java.util.Scanner;
+
 public class Teacher {
     
     String name, gender;
@@ -37,5 +39,15 @@ public class Teacher {
         name = n;
         gender = m;
         phone = ph;
+    }
+    
+    //  Returning a value from method
+    int returningValueMethod(int value) {
+        
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter any Integer number : ");
+        value = input.nextInt();
+        return value*value;
+        
     }
 }
