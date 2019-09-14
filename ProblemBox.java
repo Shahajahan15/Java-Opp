@@ -2,12 +2,13 @@ package oop;
 
 public class ProblemBox {
     
+    // Instance Variable Hiding
     double height, width, depth; // variable declare
     
-    ProblemBox(double h, double w, double d) { // costructor declare
-        height = h;
-        width = w;
-        depth = d;
+    ProblemBox(double height, double width, double depth) { // costructor declare
+        this.height = height;
+        this.width = width;
+        this.depth = depth;
     }
     
     void displayVol(){      // create method to out put display
