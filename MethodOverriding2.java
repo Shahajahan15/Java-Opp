@@ -11,6 +11,7 @@ public class MethodOverriding2 extends MethodOverriding1 {
         System.out.println("Qualification : "+Qualification);
     }
     
+    @Override
     void input(){
         name = "Shahajahan";
         id   = 172;
