@@ -16,6 +16,13 @@ public class SuperB extends SuperA{
         System.out.println("A : "+super.a);  // calling to super class
     }
     
+    // create constructor
+    SuperB(){
+        super();  // super constructor calling
+        System.out.println("B constructor");
+        
+    }
+    
     
     public static void main(String[] args) {
         
