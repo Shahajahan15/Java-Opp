@@ -14,7 +14,7 @@ public class LinkedLists {
         countryName.add("Pakistan");
         countryName.add("Shrilamka");
         countryName.add(4, "China");
-        countryName.add(3, "Hongkong");
+        countryName.add(3, "Hongkong"); 
         countryName.addFirst("Austrollia");
         countryName.addLast("New Zealand");
 //        countryName.remove("Indias");
