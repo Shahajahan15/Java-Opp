@@ -1,5 +1,6 @@
 package oop;
 
+import java.io.File;
 import java.util.Formatter;
 import java.util.Scanner;
 
@@ -7,6 +8,7 @@ public class WriteFile {
     
     public static void main(String[] args) {
         
+        // write file
         try{
             Formatter formatter = new Formatter("F:/BasicJava/OOP/Person/Student.txt");
 //            formatter.format("%d %s\r\n",101,"Shahajahan");
@@ -28,6 +30,23 @@ public class WriteFile {
         catch(Exception e){
             System.out.println(e);
         }
-    }
+
+        // read file
+       
+        try {
+            File file = new File("F:/BasicJava/OOP/Person/Student.txt");
+            Scanner input = new Scanner(file);            
+            
+            while (input.hasNext()) {
+                int id = input.nextInt();
+                String name = input.next(); 
+                System.out.println("Id : "+id +", Name : "+name);
+            }
+               
+        }
+        catch (Exception e) {
+            System.out.println(e);
+        }
     
+    }
 }
